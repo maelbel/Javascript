@@ -33,8 +33,8 @@ const voiture = {
     annee: '2000'
 }
 
-Object.entries(voiture).forEach(([name, element] = value, index) => {
-    console.log(`[${index}] ${name} : ${element}`);
+Object.entries(voiture).forEach(([key, value], index) => {
+    console.log(`[${index}] ${key} : ${value}`);
 });
 
 // Exercice 5
@@ -60,7 +60,9 @@ Object.values(livre).forEach((value) => {
 // Exercice 7
 console.info(">>>>> Exercice 7");
 
-console.log(livre);
+Object.entries(livre).forEach(([key, value], index) => {
+    console.log(`[${index}] ${key} : ${value}`);
+});
 
 // Exercice 8
 console.info(">>>>> Exercice 8");
@@ -102,7 +104,9 @@ const sum = arrayNb.reduce((accumulator, currentValue) => {
     return accumulator + currentValue;
 });
 
-console.log(sum);
+const moyenne = sum/arrayNb.length;
+
+console.log(moyenne);
 
 // Exercice 11
 console.info(">>>>> Exercice 11");
