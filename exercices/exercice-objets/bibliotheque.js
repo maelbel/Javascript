@@ -23,17 +23,17 @@ let bibliotheque = {
     supprimerLivre: function(titre) {
       this.livres = this.livres.filter(livre => livre.titre !== titre);
     }
-  };
+};
   
-  // Test des méthodes de bibliothèque
-  bibliotheque.ajouterLivre("Les Misérables", "Victor Hugo", 1200);
-  bibliotheque.ajouterLivre("1984", "George Orwell", 328);
-  
-  bibliotheque.afficherLivres();
-  
-  let livre = bibliotheque.trouverLivre("1984");
-  console.log(livre);
-  
-  bibliotheque.supprimerLivre("1984");
-  bibliotheque.afficherLivres();
+// Test des méthodes de bibliothèque
+bibliotheque.ajouterLivre("Les Misérables", "Victor Hugo", 1200);
+bibliotheque.ajouterLivre("1984", "George Orwell", 328);
+
+bibliotheque.afficherLivres();
+
+let livre = bibliotheque.trouverLivre("1984");
+console.log(livre);
+
+bibliotheque.supprimerLivre("1984");
+bibliotheque.afficherLivres();
   
