@@ -1,0 +1,14 @@
+Todo list : 
+
+- 2 colonnes "à faire" et "fait" 
+liées à 2 tableaux "à faire" et "fait" 
+
+- L'utilisateur entre une tâche dans l'input, 
+celle-ci s'affiche dans la colonne "à faire".
+
+- En cliquant sur l'une des tâches de la colonne à faire, 
+celle-ci passe dans la colonne "fait"
+
+- Lorsque tout ceci fonctionne, 
+trouver un moyen de faire persister les données dans le local storage du navigateur. 
+À l'ouverture de l'appli TodoList les colonnes sont remplies avec les données enregistées.

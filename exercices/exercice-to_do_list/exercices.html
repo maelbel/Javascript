@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercices</title>
+        <script src="./exercices.js" defer></script>
+        <style>
+            table {
+                border-collapse: collapse;
+                font-family: sans-serif;
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+            }
+
+            caption {
+                caption-side: top;
+                padding: 10px;
+                font-weight: bold;
+            }
+
+            thead {
+                background-color: rgb(228 240 245);
+            }
+
+            th {
+                border: 2px solid rgb(140 140 140);
+            }
+
+            th,
+            td {
+                padding: 0;
+                vertical-align: unset;
+            }
+
+            td:first-of-type {
+                border-right: 1px solid rgb(140 140 140);
+            }
+
+            td:last-of-type {
+                border-left: 1px solid rgb(140 140 140);
+            }
+
+            tbody > tr:nth-of-type(even) {
+                background-color: rgb(237 238 242);
+            }
+
+            .tasks {
+                margin: 0;
+                padding: 8px 10px;
+                border-bottom: 1px solid rgb(160 160 160);
+                cursor: pointer;
+            }
+
+            .tasks:hover {
+                background-color: lightgray;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>TO DO LIST</h1>
+
+        <form id="addToDo">
+            <label for="newToDo">Add task</label>
+            <input id="newToDo" type="text" />
+        </form>
+
+        <table>
+            <caption>
+              TO DO LIST
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">To do</th>
+                <th scope="col">Done</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="toDo"></td>
+                <td id="done"></td>
+              </tr>
+            </tbody>
+          </table>
+    </body>
+</html>
