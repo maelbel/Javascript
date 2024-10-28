@@ -1,3 +1,7 @@
+'use strict';
+
+import ENV from "./env.js";
+
 let content = document.getElementById('content');
 
 let search = document.getElementById('search');
@@ -10,9 +14,9 @@ search.addEventListener('submit', async (e) => {
     const langue = "fr";
     const codePaysTest = newSearch.value.split(",")[1];
     const unite = "metric";
-    const apiKey = `1a43a926e6182575ac979f1d71040a4a`;
+    const apiKey = ENV.API_KEY;
 
-    baseUrl = `https://api.openweathermap.org/data/2.5/weather?q=${ville},${codePaysTest}&lang=${langue}&units=${unite}&appid=${apiKey}`; 
+    let baseUrl = `https://api.openweathermap.org/data/2.5/weather?q=${ville},${codePaysTest}&lang=${langue}&units=${unite}&appid=${apiKey}`; 
     
     let weather = await fetch(baseUrl)
     .then((res) => res.json())
